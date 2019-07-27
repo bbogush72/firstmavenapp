@@ -33,6 +33,9 @@ Build management tool ---> Maven
 IDE ---> IntelliJ
 Browsers ---> Google Chrome, Firefox
 Project Methodologies ---> Agile-Scrum
+ERP stands for Enterprise Resource Planning, Brite is a name, BriteERP ERP is one of software in the market.
+    -The application is for companies to manage their internal and external finance, communications,  day to day activities
+CRM  is a major module which stands for Customer Relationship Management
      */
     // xpart for emailButton
     String emailButton = "//input[@name='login']";

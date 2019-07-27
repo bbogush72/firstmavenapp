@@ -63,4 +63,47 @@ public class BriteUtils {
         Assert.assertTrue(elements.isEmpty());
     }
 
+    /**
+     * =====================================================================================================
+     * This method is to send keys with Explicit waits
+     * you will change time, or elements, this is biggest advantages
+     *
+     * @param driver
+     * @param element
+     * @param timeout
+     * @param value
+     */
+    public static void sendKeys(WebDriver driver, WebElement element, int timeout, String value) {
+        new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));
+        element.sendKeys(value);
+    }
+
+    /**
+     * This method for click button with with Explicit waits
+     *
+     * @param driver
+     * @param element
+     * @param timeout
+     */
+    public static void clickOn(WebDriver driver, WebElement element, int timeout) {
+        new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
+    }
+
+    /**
+     * This method to verify a Page Title
+     *
+     * @param driver
+     * @param title
+     * @param timeout
+     */
+    public static void checkTitle(WebDriver driver, String title, int timeout) {
+        new WebDriverWait(driver, timeout).until(ExpectedConditions.titleIs(title));
+        //      Assert.assertTrue( driver.getTitle().contains(title));
+        System.out.println(driver.getTitle());
+    }
+
+
+
+
 }
