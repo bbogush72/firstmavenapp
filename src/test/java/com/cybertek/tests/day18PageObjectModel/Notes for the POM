@@ -1,0 +1,32 @@
+Page object module
+   1. Page object mode is core of selenium testing concepts.
+   2. We are separating each web page base on the their name to look more readable and reusable.
+   3. We don't need to write again and again this kind of information itself.
+   4. Developers is tracking some design pattern to be more readable code.
+   5. the also are doing some code review to find their mistake easily, it is another benefit.
+   6. once you login your test page, code reviewer might confuse , when you use pom( page object model), it will give us
+      to navigate and find what we are looking for.
+   7. when we create a brand new project, we can just specify dashBoard tabs a main page module.( we don't need to create for each page)
+   8. every test class we are crating new page class that include common code like manage page,
+                window wait time, then scripts it will be clear and more readable.
+   9. POM( page object model) it is already define in the Intelij as a plug in.
+   10. Important :
+               1) Before -->    WebElement LoginButton = driver.findElement(By.id();
+                            ::: both are the same :::
+               2)  After -->    @FindBy(id= "_submit")
+                                public WebElement loginBtn;
+   11. initElements - maps page class with driver.
+       his step pis required in every single page class.Otherwise PageFactory will not find driver.
+   12. Page object model design pattern that we use in test automation. For every page of application, we are creating
+       corresponded page class. All web elements, or methods that stands for interacting with that particular page should go in to
+       corresponding page class. For example: we have a package with page, and under this package HomePage class. this class will be used
+       as object repository for home page of the application
+   13. our framework is based on page object model.
+   14. We are initialing page factory only.
+   15. implicit wait makes your automation slower that as usual, so we can delete or uncomment it.
+   16. @FindBy annotation gives shortcut for driver. findElements.
+   16. Pom gives us a lot proficiency while building our framework.
+   17. we can also create our own annotations
+       private WebDriver driver = Driver.getDriver();
+   18. @FindBy  annotation can have all types of locators.
+   19. pageFactory is supporting pom(page object module)

@@ -1,4 +1,4 @@
-package com.cybertek.pages.VYTrackProject;
+package com.cybertek.BriteERPproject;
 
 import com.cybertek.Utilities.Driver;
 import org.openqa.selenium.By;
@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class BriteERP_LoginPage {
+public class BriteLogin {
     //xpath for userName button //input[@name='login']
     static String userNameLocator = "//input[@name='login']";
     //xpath for the storemanagerPassword box //input[@name='storemanagerPassword']

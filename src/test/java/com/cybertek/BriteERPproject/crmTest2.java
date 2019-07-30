@@ -36,7 +36,7 @@ Project Methodologies ---> Agile-Scrum
      */
     // xpart for emailButton
     String emailButton = "//input[@name='login']";
-    // xpart for storemanagerPassword button
+    // xpart for storemanagerPassword button : //input[@id='password']
     String passwordButton = "//input[@name='storemanagerPassword']";
     //Orijinal xpath /button[contains(text(), "Create")]
 
