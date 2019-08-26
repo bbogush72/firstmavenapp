@@ -2,8 +2,8 @@
   "posts": [
     {
       "id": 1453,
-      "title": "new era"
-      "goal": "maven"
+      "title": "new era",
+      "goal": "maven",
       "type": "java"
     }
   ],
